@@ -4,12 +4,15 @@
 #include "swmachine.h"
 
 class Command
-{
-    SWMachine* m_machine;
-    void(SWMachine ::*action)();
+{    
 public:
-    Command(SWMachine* machine = 0, void(SWMachine ::*method)() = 0);
+    typedef void(SWMachine ::*Action)();
+    Command(SWMachine* machine = 0, Action action = 0);
     void execute();
+private:
+    SWMachine* m_machine;
+    Action m_action;
+
 };
 
 #endif // COMMAND_H
