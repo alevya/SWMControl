@@ -1,4 +1,5 @@
-QT += quick
+QT += quick  core
+QT += serialport
 
 CONFIG += c++14
 
