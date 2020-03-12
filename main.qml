@@ -59,7 +59,9 @@ Window {
     TabBar {
         id: mainTabBar
         width: parent.width
-
+        background: Rectangle {
+            color: "#eeeeee"
+        }
         TabButton {
             text: qsTr("Main")
             transformOrigin: Item.Center
