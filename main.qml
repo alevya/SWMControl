@@ -74,17 +74,15 @@ Window {
     StackLayout {
         anchors.top: mainTabBar.bottom
         width: parent.width
+        height: parent.height - mainTabBar.height
         currentIndex: mainTabBar.currentIndex
 
-//        Item{
-//            id: mainTab
-//            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-//            Layout.fillHeight: true
-//            Layout.fillWidth: true
-//            anchors.fill: parent
+        Item{
+            id: mainTab
+            anchors.fill: parent
             GridLayout {
                 id: gridLayout;
-                height: 19
+                height: 200
                 anchors.fill: parent
                 rows: 3;
                 columns: 3;
@@ -138,7 +136,7 @@ Window {
                      Layout.row: 3
                      Layout.column: 1
                 }
-       // }
+        }
 
 
     }
