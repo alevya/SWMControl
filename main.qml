@@ -62,9 +62,16 @@ Window {
         background: Rectangle {
             color: "#eeeeee"
         }
+//        CustomTabButton {
+//            text: qsTr("Main")
+//        }
+
+//        CustomTabButton {
+//           text: qsTr("Settings")
+//        }
         TabButton {
             text: qsTr("Main")
-            transformOrigin: Item.Center
+
         }
 
         TabButton {
@@ -81,7 +88,7 @@ Window {
 
         Item{
             id: mainTab
-            anchors.fill: parent
+            //anchors.fill: parent
             GridLayout {
                 id: gridLayout;
                 height: 200
