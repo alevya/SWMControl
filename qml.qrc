@@ -3,5 +3,7 @@
         <file>main.qml</file>
         <file>TabWidget.qml</file>
         <file>CustomTabButton.qml</file>
+        <file>MainPage.qml</file>
+        <file>SettingsPage.qml</file>
     </qresource>
 </RCC>
